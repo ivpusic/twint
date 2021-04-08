@@ -2,7 +2,7 @@ import sys, os, datetime
 from asyncio import get_event_loop, TimeoutError, ensure_future, new_event_loop, set_event_loop
 
 from . import datelock, feed, get, output, verbose, storage
-from .token import TokenExpiryException
+from .exception import TokenExpiryException
 from . import token
 from .storage import db
 from .feed import NoMoreTweetsException
